@@ -304,12 +304,6 @@
                             <div class="circle-image">
                                 <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Skin hydration">
                             </div>
-                            <svg class="progress-ring">
-                                <circle cx="70" cy="70" r="65" class="progress"></circle>
-                            </svg>
-                            <div class="percentage">
-                                <span class="value">0</span>%
-                            </div>
                         </div>
                         <p data-key="result-1">2 hafta sonra gelişmiş cilt nemlendirilmesi</p>
                     </div>
@@ -343,26 +337,6 @@
                     </div>
                 </div>
                 <div class="results-images" data-aos="fade-left" data-aos-delay="400">
-                    <div class="before-after-slider">
-                        <div class="img-container">
-                            <img class="before-img" src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Before treatment">
-                            <img class="after-img" src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="After treatment">
-                        </div>
-                        <div class="slider-handle">
-                            <div class="handle-line"></div>
-                            <div class="handle-circle">
-                                <i class="fas fa-chevron-left"></i>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                        </div>
-                        <div class="labels">
-                            <div class="label before-label" data-key="before">Öncesi</div>
-                            <div class="label after-label" data-key="after">4 Hafta Sonrası</div>
-                        </div>
-                    </div>
-                    <p class="results-disclaimer" data-key="results-disclaimer">*120 katılımcıyla 12 haftalık klinik çalışmaya dayalı sonuçlar</p>
-                </div>
-            </div>
         </div>
         <div class="floating-bubbles">
             <div class="bubble"></div>
@@ -371,6 +345,36 @@
             <div class="bubble"></div>
             <div class="bubble"></div>
             <div class="bubble"></div>
+        </div>
+    </section>
+
+    <section id="comparison" class="comparison">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" data-key="comparison-subtitle">Görünür Sonuçlar</span>
+                <h2 data-key="comparison-title">Gerçek Sonuçları Görün</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="comparison-content">
+                <div class="before-after-slider" data-aos="fade-up" data-aos-delay="200">
+                    <div class="img-container">
+                        <img class="before-img" src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Before treatment">
+                        <img class="after-img" src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="After treatment">
+                    </div>
+                    <div class="slider-handle">
+                        <div class="handle-line"></div>
+                        <div class="handle-circle">
+                            <i class="fas fa-chevron-left"></i>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <div class="label before-label" data-key="before">Öncesi</div>
+                        <div class="label after-label" data-key="after">4 Hafta Sonrası</div>
+                    </div>
+                </div>
+                <p class="comparison-disclaimer" data-key="comparison-disclaimer">*120 katılımcıyla yapılan 12 haftalık klinik çalışma sonuçları. Sonuçlar kişiden kişiye değişebilir.</p>
+            </div>
         </div>
     </section>
 
@@ -569,7 +573,7 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -783,15 +787,16 @@
                 countUpObserver.observe(el);
             });
             
-            // Initialize stat animations
+            // Initialize circular progress for stats when they come into view
             const statItems = document.querySelectorAll('.stat-item');
             
             const animateStats = () => {
                 statItems.forEach(item => {
                     const valueDisplay = item.querySelector('.value');
-                    const targetValue = item.getAttribute('data-value');
+                    const targetValue = parseInt(item.getAttribute('data-value'));
                     const progressCircle = item.querySelector('.progress');
-                    const circumference = 2 * Math.PI * 65;
+                    const radius = progressCircle.getAttribute('r');
+                    const circumference = 2 * Math.PI * radius;
                     
                     let currentValue = 0;
                     const duration = 2000;
@@ -807,209 +812,29 @@
                         }
                         
                         valueDisplay.textContent = Math.floor(currentValue);
-                        const progress = (targetValue - currentValue) / targetValue;
-                        progressCircle.style.strokeDashoffset = circumference * progress;
+                        const offset = circumference - (currentValue / 100) * circumference;
+                        progressCircle.style.strokeDashoffset = offset;
                         
                         currentValue += increment;
                     }, 20);
                 });
             };
             
-            // Initialize tabs
-            const tabs = document.querySelectorAll('.tab');
-            tabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    const tabId = tab.getAttribute('data-tab');
-                    
-                    // Remove active class from all tabs and contents
-                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                    
-                    // Add active class to clicked tab and corresponding content
-                    tab.classList.add('active');
-                    document.getElementById(tabId).classList.add('active');
-                });
-            });
-            
-            // Testimonial slideshow
-            const nextBtn = document.querySelector('.next-arrow');
-            const prevBtn = document.querySelector('.prev-arrow');
-            const slideTrack = document.querySelector('.slide-track');
-            const slides = document.querySelectorAll('.testimonial-card');
-            
-            let currentPosition = 0;
-            const slideWidth = slides[0].offsetWidth + 30; // card width + gap
-            const totalSlides = slides.length;
-            const slidesPerView = window.innerWidth < 768 ? 1 : window.innerWidth < 992 ? 2 : 3;
-            const maxPosition = (totalSlides - slidesPerView) * slideWidth;
-            
-            // Add active class to visible slides
-            function updateActiveSlides() {
-                const visibleStart = Math.floor(currentPosition / slideWidth);
-                slides.forEach((slide, index) => {
-                    if (index >= visibleStart && index < visibleStart + slidesPerView) {
-                        slide.classList.add('active');
-                    } else {
-                        slide.classList.remove('active');
-                    }
-                });
-            }
-            
-            // Initial setup
-            updateActiveSlides();
-            
-            // Next slide
-            nextBtn.addEventListener('click', () => {
-                if (currentPosition < maxPosition) {
-                    currentPosition += slideWidth;
-                } else {
-                    currentPosition = 0; // Loop back to start
-                }
-                slideTrack.style.transform = `translateX(-${currentPosition}px)`;
-                updateActiveSlides();
-            });
-            
-            // Previous slide
-            prevBtn.addEventListener('click', () => {
-                if (currentPosition > 0) {
-                    currentPosition -= slideWidth;
-                } else {
-                    currentPosition = maxPosition; // Loop to end
-                }
-                slideTrack.style.transform = `translateX(-${currentPosition}px)`;
-                updateActiveSlides();
-            });
-            
-            // Auto-rotate testimonials
-            setInterval(() => {
-                if (currentPosition < maxPosition) {
-                    currentPosition += slideWidth;
-                } else {
-                    currentPosition = 0;
-                }
-                slideTrack.style.transform = `translateX(-${currentPosition}px)`;
-                updateActiveSlides();
-            }, 7000);
-            
-            // Handle window resize for responsive behavior
-            window.addEventListener('resize', () => {
-                const newSlidesPerView = window.innerWidth < 768 ? 1 : window.innerWidth < 992 ? 2 : 3;
-                if (newSlidesPerView !== slidesPerView) {
-                    currentPosition = 0;
-                    slideTrack.style.transform = 'translateX(0)';
-                    updateActiveSlides();
-                }
-            });
-            
             // Intersection Observer for stats animation
             const resultsSection = document.querySelector('.results');
             
-            const observer = new IntersectionObserver((entries) => {
+            const statsObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         animateStats();
-                        observer.unobserve(entry.target);
+                        statsObserver.unobserve(entry.target);
                     }
                 });
             }, { threshold: 0.5 });
             
             if (resultsSection) {
-                observer.observe(resultsSection);
+                statsObserver.observe(resultsSection);
             }
-            
-            // Parallax effect for about section background
-            window.addEventListener('scroll', function() {
-                const parallaxBg = document.querySelector('.parallax-bg');
-                if (parallaxBg) {
-                    const scrollPosition = window.pageYOffset;
-                    parallaxBg.style.transform = 'translateY(' + scrollPosition * 0.3 + 'px)';
-                }
-            });
-            
-            // Product filter functionality
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            const productCards = document.querySelectorAll('.product-card');
-            
-            // Initialize products with staggered animation
-            productCards.forEach((card, index) => {
-                setTimeout(() => {
-                    card.style.opacity = "1";
-                    card.style.transform = "translateY(0)";
-                }, 100 * index);
-            });
-            
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    // Add animation to button
-                    btn.classList.add('btn-clicked');
-                    setTimeout(() => {
-                        btn.classList.remove('btn-clicked');
-                    }, 300);
-                    
-                    // Remove active class from all buttons
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    
-                    // Add active class to clicked button
-                    btn.classList.add('active');
-                    
-                    const filter = btn.getAttribute('data-filter');
-                    
-                    // Filter products with staggered animation
-                    let visibleIndex = 0;
-                    
-                    productCards.forEach(card => {
-                        card.style.transition = "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)";
-                        
-                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                            // Show cards that match the filter
-                            setTimeout(() => {
-                                card.style.opacity = "1";
-                                card.style.transform = "translateY(0)";
-                                card.style.display = "block";
-                                card.classList.add('visible');
-                            }, 100 * visibleIndex);
-                            visibleIndex++;
-                        } else {
-                            // Hide cards that don't match
-                            card.classList.remove('visible');
-                            card.style.opacity = "0";
-                            card.style.transform = "translateY(20px) scale(0.95)";
-                            setTimeout(() => {
-                                card.style.display = "none";
-                            }, 300);
-                        }
-                    });
-                });
-            });
-            
-            // Video modal
-            const playButton = document.querySelector('.play-button');
-            if (playButton) {
-                playButton.addEventListener('click', () => {
-                    // In a real implementation, this would open a video modal
-                    alert('Video would play in a modal window');
-                });
-            }
-            
-            // Form animation enhancements
-            const formInputs = document.querySelectorAll('.floating-label input, .floating-label textarea, .floating-label select');
-            
-            formInputs.forEach(input => {
-                input.addEventListener('focus', () => {
-                    input.parentNode.classList.add('focused');
-                });
-                
-                input.addEventListener('blur', () => {
-                    if (!input.value) {
-                        input.parentNode.classList.remove('focused');
-                    }
-                });
-                
-                // Check if input has value on page load
-                if (input.value) {
-                    input.parentNode.classList.add('focused');
-                }
-            });
             
             // Reveal text animation on scroll
             const revealTextElements = document.querySelectorAll('.reveal-text');
@@ -1050,7 +875,7 @@
             });
 
             // Initialize the before-after slider functionality
-            const beforeAfterSlider = document.querySelector('.before-after-slider');
+            const beforeAfterSlider = document.querySelector('.comparison .before-after-slider');
             if (beforeAfterSlider) {
                 const sliderHandle = beforeAfterSlider.querySelector('.slider-handle');
                 const beforeImg = beforeAfterSlider.querySelector('.before-img');
@@ -1071,7 +896,7 @@
                     // Update handle position
                     sliderHandle.style.left = `${position}%`;
                     
-                    // Update clip-path for the images
+                    // Update clip-path for the before and after images
                     beforeImg.style.clipPath = `polygon(0 0, ${position}% 0, ${position}% 100%, 0 100%)`;
                     afterImg.style.clipPath = `polygon(${position}% 0, 100% 0, 100% 100%, ${position}% 100%)`;
                 };
@@ -1098,8 +923,9 @@
                 };
                 
                 // Add event listeners for mouse events
-                sliderHandle.addEventListener('mousedown', () => {
+                sliderHandle.addEventListener('mousedown', (e) => {
                     isDragging = true;
+                    e.preventDefault(); // Prevent text selection
                 });
                 
                 window.addEventListener('mouseup', () => {
@@ -1109,8 +935,9 @@
                 window.addEventListener('mousemove', handleDrag);
                 
                 // Add event listeners for touch events (mobile support)
-                sliderHandle.addEventListener('touchstart', () => {
+                sliderHandle.addEventListener('touchstart', (e) => {
                     isDragging = true;
+                    e.preventDefault(); // Prevent scrolling on mobile
                 });
                 
                 window.addEventListener('touchend', () => {
@@ -1126,9 +953,31 @@
                     updateSliderPosition(position);
                 });
                 
-                // Set initial position
-                updateSliderPosition(sliderPosition);
+                // Set initial position manually to ensure it works
+                beforeImg.style.clipPath = `polygon(0 0, 50% 0, 50% 100%, 0 100%)`;
+                afterImg.style.clipPath = `polygon(50% 0, 100% 0, 100% 100%, 50% 100%)`;
+                sliderHandle.style.left = '50%';
             }
+
+            // Initialize form input focus and blur events
+            const formInputs = document.querySelectorAll('#contactForm input, #contactForm select, #contactForm textarea');
+            
+            formInputs.forEach(input => {
+                input.addEventListener('focus', () => {
+                    input.parentNode.classList.add('focused');
+                });
+                
+                input.addEventListener('blur', () => {
+                    if (!input.value) {
+                        input.parentNode.classList.remove('focused');
+                    }
+                });
+                
+                // Check if input has value on page load
+                if (input.value) {
+                    input.parentNode.classList.add('focused');
+                }
+            });
         });
     </script>
 </body>
