@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DermaMoist - Lüks Dermatolojik Cilt Bakımı</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="translations.js"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">DermaMoist</div>
+            <div class="loader-progress"><span></span></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">DermaMoist<span>™</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home" data-key="nav-home">Ana Sayfa</a></li>
+                    <li><a href="#about" data-key="nav-about">Hakkımızda</a></li>
+                    <li><a href="#products" data-key="nav-products">Ürünler</a></li>
+                    <li><a href="#benefits" data-key="nav-benefits">Faydalar</a></li>
+                    <li><a href="#contact" data-key="nav-contact">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="tr">TR</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop id="hero-video">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-washing-her-face-in-slow-motion-1236-large.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="reveal-text" data-key="hero-title">Dermatolojik Nemlendirmede Yeni Bir Dönem</h1>
+                <p class="reveal-text" data-key="hero-subtitle">Klinik düzeyde cilt beslenmesi için bilimsel olarak geliştirilmiş formülasyonlar</p>
+                <div class="hero-buttons reveal-text">
+                    <a href="#products" class="btn btn-glow" data-key="hero-btn-1">Koleksiyonu Keşfet</a>
+                    <a href="#science" class="btn-outline" data-key="hero-btn-2">Bilimimiz</a>
+                </div>
+                <div class="hero-badges reveal-text">
+                    <div class="badge">
+                        <i class="fas fa-award"></i>
+                        <span data-key="hero-badge-1">Dermatologlar Tarafından Geliştirildi</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-flask"></i>
+                        <span data-key="hero-badge-2">Klinik Olarak Kanıtlandı</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-leaf"></i>
+                        <span data-key="hero-badge-3">Temiz Formüller</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span data-key="scroll-down">Kaydır</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="hero-particles" id="particles-js"></div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" data-key="about-subtitle">Hikayemiz</span>
+                <h2 data-key="about-title">DermaMoist Hakkında</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1556228578-d3799f1194a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Moisturizer cream">
+                    <div class="about-experience">
+                        <span class="number count-up" data-count="25">0</span>
+                        <span class="text" data-key="about-years">Mükemmellik<br>Yılı</span>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-delay="400">
+                    <p class="lead" data-key="about-lead">DermaMoist, dünya çapında önde gelen dermatologlar tarafından güvenilen dermatolojik cilt bakımının zirvesini temsil eder.</p>
+                    <p data-key="about-p1">Önde gelen dermatoloji araştırmacıları ve biyokimyacılar arasındaki işbirliğinden doğan formülasyonlarımız, cilt bilimindeki en son gelişmelerden yararlanır. Eşsiz kalite ve etkililik sağlamak için sadece titizlikle kaynaklanmış ve test edilmiş farmasötik sınıf içerikler kullanıyoruz.</p>
+                    <p data-key="about-p2">Geleneksel nemlendiricilerin aksine, özel Aqua-Lock Teknolojimiz™, gün boyunca cildinizin değişen ihtiyaçlarına uyum sağlayan, hassas ayarlı nemlendirme sağlayan duyarlı bir nem matrisi oluşturur.</p>
+                    <div class="about-signature">
+                        <div class="sig-img">
+                            <img src="https://i.imgur.com/JFHjdNE.png" alt="Signature">
+                        </div>
+                        <div class="sig-info">
+                            <p class="name">Dr. Elizabeth Chen</p>
+                            <p class="title" data-key="about-founder">Kurucu & Baş Dermatolog</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-bg"></div>
+    </section>
+
+    <section id="science" class="science">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" data-key="science-subtitle">Yaklaşımımız</span>
+                <h2 data-key="science-title">DermaMoist'in Arkasındaki Bilim</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="science-content">
+                <div class="science-video" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="video-container">
+                        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Laboratory research">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="science-text" data-aos="fade-up" data-aos-delay="400">
+                    <div class="science-tabs">
+                        <div class="tab active" data-tab="research" data-key="science-tab-1">Araştırma</div>
+                        <div class="tab" data-tab="technology" data-key="science-tab-2">Teknoloji</div>
+                        <div class="tab" data-tab="testing" data-key="science-tab-3">Test</div>
+                    </div>
+                    <div class="tab-content active" id="research">
+                        <h3 data-key="science-research-title">İleri Düzey Araştırma</h3>
+                        <p data-key="science-research-p">Bilim ekibimiz, cildin nemlendirme mekanizmaları üzerine sürekli araştırmalar yürüterek, nem tutma ve bariyer fonksiyonunu artıran optimal moleküler yapıları belirliyor.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> <span data-key="science-feature-1">Gelişmiş biyometrik nem analizi</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-key="science-feature-2">Hücresel nemlendirme yolu haritalama</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-key="science-feature-3">Dermal matris geliştirme çalışmaları</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="technology">
+                        <h3 data-key="science-tech-title">Özel Teknoloji</h3>
+                        <p data-key="science-tech-p">Özel Aqua-Lock Teknolojimiz™, gün boyunca cildinizin değişen nemlendirme ihtiyaçlarına sürekli uyum sağlayan duyarlı bir nem matrisi oluşturur.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> <span data-key="science-feature-4">Çok fazlı nem salınım sistemi</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-key="science-feature-5">Biyomimetik lipid bariyer güçlendirme</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-key="science-feature-6">Hyaluronik asit moleküler optimizasyonu</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="testing">
+                        <h3 data-key="science-test-title">Klinik Doğrulama</h3>
+                        <p data-key="science-test-p">Her formülasyon, etkinliğini, güvenliğini ve çeşitli çevresel koşullar altında performansını doğrulamak için titiz klinik testlerden geçer.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> <span data-key="science-feature-7">12 haftalık klinik etkinlik denemeleri</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-key="science-feature-8">Transepidermal su kaybı değerlendirmesi</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-key="science-feature-9">Çevresel stres koşulu testleri</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" data-key="products-subtitle">Koleksiyonumuz</span>
+                <h2 data-key="products-title">Premium Formülasyonlar</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="product-filter" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all" data-key="filter-all">Tüm Ürünler</button>
+                <button class="filter-btn" data-filter="daily" data-key="filter-daily">Günlük Bakım</button>
+                <button class="filter-btn" data-filter="intensive" data-key="filter-intensive">Yoğun Tedavi</button>
+                <button class="filter-btn" data-filter="sensitive" data-key="filter-sensitive">Hassas Cilt</button>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300" data-category="daily">
+                    <div class="product-badge">Signature</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556229010-aa3f7ff66b24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Daily Moisturizer">
+                    </div>
+                    <div class="product-details">
+                        <h3 data-key="product-1-title">Hydra-Luxe Günlük Krem</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(124)</span>
+                        </div>
+                        <p data-key="product-1-desc">24 saat nemlendirme teknolojisiyle günlük kullanım için hafif, yağsız formül.</p>
+                        <div class="product-info">
+                            <div class="info-item"><i class="fas fa-check"></i> <span data-key="clinical-grade">Klinik Sınıf</span></div>
+                            <div class="info-item"><i class="fas fa-check"></i> <span data-key="dermatologist-tested">Dermatolog Onaylı</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400" data-category="intensive">
+                    <div class="product-badge">Advanced</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Intensive Repair Cream">
+                    </div>
+                    <div class="product-details">
+                        <h3 data-key="product-2-title">Yoğun İyileştirme Kompleksi</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(98)</span>
+                        </div>
+                        <p data-key="product-2-desc">Hasar görmüş cilt bariyerlerinin derin onarımı için seramid ve peptidlerle gelişmiş formül.</p>
+                        <div class="product-info">
+                            <div class="info-item"><i class="fas fa-check"></i> <span data-key="professional-grade">Profesyonel Sınıf</span></div>
+                            <div class="info-item"><i class="fas fa-check"></i> <span data-key="intensive-treatment">Yoğun Tedavi</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="500" data-category="sensitive">
+                    <div class="product-badge">Specialized</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80   " alt="Sensitive Skin Formula">
+                    </div>
+                    <div class="product-details">
+                        <h3 data-key="product-3-title">Sakinleştirici Nem Özü</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(76)</span>
+                        </div>
+                        <p data-key="product-3-desc">Hassas ciltler için prebiyotik teknolojisi ile ultra-hafif, hipoalerjenik formülasyon.</p>
+                        <div class="product-info">
+                            <div class="info-item"><i class="fas fa-check"></i> <span data-key="hypoallergenic">Hipoalerjenik</span></div>
+                            <div class="info-item"><i class="fas fa-check"></i> <span data-key="fragrance-free">Parfümsüz</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container" data-aos="fade-up" data-aos-delay="600">
+                <a href="#" class="btn-outline" data-key="view-all">Tüm Koleksiyonu Gör</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" data-key="benefits-subtitle">Neden Bizi Seçmelisiniz</span>
+                <h2 data-key="benefits-title">DermaMoist Farkı</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon"><i class="fas fa-droplet"></i></div>
+                    <h3 data-key="benefit-1-title">Klinik Düzeyde Nemlendirme</h3>
+                    <p data-key="benefit-1-desc">Gelişmiş formülasyonlar, hücresel düzeyde 72 saate kadar sürekli nemlendirme sağlar</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon"><i class="fas fa-shield"></i></div>
+                    <h3 data-key="benefit-2-title">Bariyer Restorasyonu</h3>
+                    <p data-key="benefit-2-desc">Özel lipid kompleksi, cildin doğal koruyucu bariyerini yeniden oluşturur ve güçlendirir</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-icon"><i class="fas fa-microscope"></i></div>
+                    <h3 data-key="benefit-3-title">Araştırma Destekli</h3>
+                    <p data-key="benefit-3-desc">Formülasyonlar, onlarca yıllık dermatolojik araştırma ve klinik doğrulamaya dayanır</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-icon"><i class="fas fa-leaf"></i></div>
+                    <h3 data-key="benefit-4-title">Temiz İçerikler</h3>
+                    <p data-key="benefit-4-desc">Optimal cilt sağlığı için paraben, sülfat, ftalat ve yapay parfümler içermez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="results">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" data-key="results-subtitle">Klinik Sonuçlar</span>
+                <h2 data-key="results-title">Kanıtlanmış Etkinlik</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="results-content">
+                <div class="results-stats" data-aos="fade-right" data-aos-delay="200">
+                    <div class="stat-item" data-value="94">
+                        <div class="stat-circle">
+                            <svg>
+                                <defs>
+                                    <pattern id="hydrationImage" patternUnits="userSpaceOnUse" width="140" height="140">
+                                        <image href="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" x="0" y="0" width="140" height="140" />
+                                    </pattern>
+                                </defs>
+                                <circle cx="70" cy="70" r="65" fill="url(#hydrationImage)"></circle>
+                                <circle cx="70" cy="70" r="65" class="progress"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <span class="value">0</span>%
+                            </div>
+                        </div>
+                        <p data-key="result-1">2 hafta sonra gelişmiş cilt nemlendirilmesi</p>
+                    </div>
+                    <div class="stat-item" data-value="87">
+                        <div class="stat-circle">
+                            <svg>
+                                <defs>
+                                    <pattern id="barrierImage" patternUnits="userSpaceOnUse" width="140" height="140">
+                                        <image href="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" x="0" y="0" width="140" height="140" />
+                                    </pattern>
+                                </defs>
+                                <circle cx="70" cy="70" r="65" fill="url(#barrierImage)"></circle>
+                                <circle cx="70" cy="70" r="65" class="progress"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <span class="value">0</span>%
+                            </div>
+                        </div>
+                        <p data-key="result-2">Gelişmiş cilt bariyer fonksiyonu</p>
+                    </div>
+                    <div class="stat-item" data-value="92">
+                        <div class="stat-circle">
+                            <svg>
+                                <defs>
+                                    <pattern id="textureImage" patternUnits="userSpaceOnUse" width="140" height="140">
+                                        <image href="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" x="0" y="0" width="140" height="140" />
+                                    </pattern>
+                                </defs>
+                                <circle cx="70" cy="70" r="65" fill="url(#textureImage)"></circle>
+                                <circle cx="70" cy="70" r="65" class="progress"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <span class="value">0</span>%
+                            </div>
+                        </div>
+                        <p data-key="result-3">Cilt dokusunda gözle görülür iyileşme bildirildi</p>
+                    </div>
+                </div>
+                <div class="results-images" data-aos="fade-left" data-aos-delay="400">
+                    <div class="before-after-slider">
+                        <div class="img-container">
+                            <img class="before-img" src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Before treatment">
+                            <img class="after-img" src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="After treatment">
+                        </div>
+                        <div class="slider-handle">
+                            <div class="handle-line"></div>
+                            <div class="handle-circle">
+                                <i class="fas fa-chevron-left"></i>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="labels">
+                            <div class="label before-label" data-key="before">Öncesi</div>
+                            <div class="label after-label" data-key="after">4 Hafta Sonrası</div>
+                        </div>
+                    </div>
+                    <p class="results-disclaimer" data-key="results-disclaimer">*120 katılımcıyla 12 haftalık klinik çalışmaya dayalı sonuçlar</p>
+                </div>
+            </div>
+        </div>
+        <div class="floating-bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" data-key="testimonials-subtitle">Uzman Görüşü</span>
+                <h2 data-key="testimonials-title">Dermatologlar Tarafından Güvenilen</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="testimonial-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="slider-container">
+                    <div class="slide-track">
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                            <p>"DermaMoist represents a paradigm shift in therapeutic moisturizers. The innovative Aqua-Lock Technology creates lasting hydration that adapts to individual skin needs, making it my top recommendation for patients with diverse dermatological concerns."</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Dr. Sarah Johnson">
+                                </div>
+                                <div class="author-info">
+                                    <div class="testimonial-name">Dr. Sarah Johnson, MD, FAAD</div>
+                                    <div class="testimonial-title">Board Certified Dermatologist<br>Clinical Professor, Stanford University</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                            <p>"The clinical efficacy of DermaMoist products is remarkable. I've observed significant improvements in patients with chronic skin dryness and compromised barrier function. Their research team continues to pioneer advancements in dermatologic moisturization."</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Dr. Michael Roberts">
+                                </div>
+                                <div class="author-info">
+                                    <div class="testimonial-name">Dr. Michael Roberts, MD</div>
+                                    <div class="testimonial-title">Director of Dermatologic Research<br>Northwestern University</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                            <p>"What sets DermaMoist apart is their commitment to formulation integrity. Each product undergoes rigorous testing exceeding industry standards. For patients seeking clinical-grade skincare, DermaMoist delivers exceptional performance with scientific validation."</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dr. Amelia Chen">
+                                </div>
+                                <div class="author-info">
+                                    <div class="testimonial-name">Dr. Amelia Chen, MD, PhD</div>
+                                    <div class="testimonial-title">Chief of Dermatology<br>Mount Sinai Hospital</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-arrows">
+                    <button class="prev-arrow"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-arrow"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle" data-key="contact-subtitle">İletişime Geçin</span>
+                <h2 data-key="contact-title">Bize Ulaşın</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form" data-aos="fade-right" data-aos-delay="200">
+                    <form id="contactForm">
+                        <div class="form-group floating-label">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name" data-key="form-name">Ad Soyad</label>
+                            <div class="line-animation"></div>
+                        </div>
+                        <div class="form-group floating-label">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email" data-key="form-email">E-posta Adresi</label>
+                            <div class="line-animation"></div>
+                        </div>
+                        <div class="form-group floating-label">
+                            <select id="inquiry" name="inquiry" required>
+                                <option value="" disabled selected></option>
+                                <option value="product" data-key="inquiry-product">Ürün Sorgulaması</option>
+                                <option value="professional" data-key="inquiry-professional">Profesyonel İşbirliği</option>
+                                <option value="press" data-key="inquiry-press">Basın & Medya</option>
+                                <option value="other" data-key="inquiry-other">Diğer</option>
+                            </select>
+                            <label for="inquiry" data-key="form-inquiry">Sorgulama Türü</label>
+                            <div class="line-animation"></div>
+                        </div>
+                        <div class="form-group floating-label">
+                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message" data-key="form-message">Mesajınız</label>
+                            <div class="line-animation"></div>
+                        </div>
+                        <button type="submit" class="btn" data-key="form-submit">Mesaj Gönder</button>
+                    </form>
+                </div>
+                <div class="contact-info" data-aos="fade-left" data-aos-delay="400">
+                    <h3 data-key="contact-heading">Bağlantı Kuralım</h3>
+                    <p class="lead" data-key="contact-lead">Sorularınızı yanıtlamak ve kişiselleştirilmiş cilt bakımı rehberliği sağlamak için buradayız.</p>
+                    <ul class="contact-details">
+                        <li>
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4 data-key="contact-email">E-posta Gönder</h4>
+                                <p>clientcare@dermamoist.com</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4 data-key="contact-call">Bizi Arayın</h4>
+                                <p>+1 (800) 555-1234</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4 data-key="contact-visit">Mağazamızı Ziyaret Edin</h4>
+                                <p>785 Fifth Avenue<br>New York, NY 10022</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="footer-logo">DermaMoist<span>™</span></div>
+                        <p data-key="footer-tagline">Bilim ve inovasyon yoluyla dermatolojik cilt bakımını yeniden tanımlıyoruz.</p>
+                        <div class="certifications">
+                            <img src="https://i.imgur.com/JWTEu1k.png" alt="FDA Approved">
+                            <img src="https://i.imgur.com/0nmBGKT.png" alt="Dermatologist Tested">
+                            <img src="https://i.imgur.com/vfqJRuR.png" alt="Cruelty Free">
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4 data-key="footer-products">Ürünler</h4>
+                        <ul>
+                            <li><a href="#" data-key="footer-daily">Günlük Nemlendiriciler</a></li>
+                            <li><a href="#" data-key="footer-treatment">Tedavi Formülleri</a></li>
+                            <li><a href="#" data-key="footer-sensitive">Hassas Cilt</a></li>
+                            <li><a href="#" data-key="footer-professional">Profesyonel Ürünler</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4 data-key="footer-company">Şirket</h4>
+                        <ul>
+                            <li><a href="#" data-key="footer-about">Hakkımızda</a></li>
+                            <li><a href="#" data-key="footer-science">Bilimimiz</a></li>
+                            <li><a href="#" data-key="footer-research">Klinik Araştırmalar</a></li>
+                            <li><a href="#" data-key="footer-careers">Kariyer</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4 data-key="footer-support">Destek</h4>
+                        <ul>
+                            <li><a href="#" data-key="footer-contact">İletişim</a></li>
+                            <li><a href="#" data-key="footer-faq">SSS</a></li>
+                            <li><a href="#" data-key="footer-privacy">Gizlilik Politikası</a></li>
+                            <li><a href="#" data-key="footer-terms">Kullanım Şartları</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4 data-key="footer-newsletter">Topluluğumuza Katılın</h4>
+                        <p data-key="footer-newsletter-p">Dermatologlarımızdan özel içerikler, cilt bakım ipuçları ve ürün lansmanları için abone olun.</p>
+                        <form class="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="E-posta adresiniz" data-key="footer-email-placeholder">
+                                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p data-key="footer-copyright">© 2023 DermaMoist. Tüm hakları saklıdır. DermaMoist™ ve Aqua-Lock Technology™ tescilli ticari markalardır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Language switcher functionality
+            const langButtons = document.querySelectorAll('.lang-btn');
+            let currentLang = 'tr'; // Default language is Turkish
+            
+            // Function to update content based on language
+            function updateContent(lang) {
+                document.documentElement.lang = lang;
+                document.title = translations[lang]['title'];
+                
+                // Update text elements with data-key attribute
+                const elements = document.querySelectorAll('[data-key]');
+                elements.forEach(el => {
+                    const key = el.getAttribute('data-key');
+                    if (translations[lang][key]) {
+                        el.innerHTML = translations[lang][key];
+                    }
+                });
+                
+                // Update placeholder attributes
+                const placeholders = document.querySelectorAll('[data-key][placeholder]');
+                placeholders.forEach(el => {
+                    const key = el.getAttribute('data-key');
+                    if (translations[lang][key]) {
+                        el.setAttribute('placeholder', translations[lang][key]);
+                    }
+                });
+                
+                // Update select options
+                const selects = document.querySelectorAll('select');
+                selects.forEach(select => {
+                    Array.from(select.options).forEach(option => {
+                        const key = option.getAttribute('data-key');
+                        if (key && translations[lang][key]) {
+                            option.text = translations[lang][key];
+                        }
+                    });
+                });
+                
+                // Update active button
+                langButtons.forEach(btn => {
+                    if (btn.getAttribute('data-lang') === lang) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+                
+                currentLang = lang;
+            }
+            
+            // Add click event to language buttons
+            langButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    updateContent(lang);
+                });
+            });
+            
+            // Initialize AOS animations
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            
+            // Simulate loader - reduce timeout to make it faster
+            setTimeout(function() {
+                document.querySelector('.loader').classList.add('fade-out');
+                setTimeout(function() {
+                    document.querySelector('.loader').style.display = 'none';
+                }, 300);
+            }, 500);
+            
+            // Particles JS for hero section
+            if(document.getElementById('particles-js')) {
+                particlesJS('particles-js', {
+                    "particles": {
+                        "number": {
+                            "value": 50,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": {
+                            "value": "#ffffff"
+                        },
+                        "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            }
+                        },
+                        "opacity": {
+                            "value": 0.3,
+                            "random": true,
+                            "anim": {
+                                "enable": true,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "size": {
+                            "value": 3,
+                            "random": true,
+                            "anim": {
+                                "enable": true,
+                                "speed": 2,
+                                "size_min": 0.3,
+                                "sync": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#ffffff",
+                            "opacity": 0.2,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 1,
+                            "direction": "none",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": false,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "grab"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "push"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 140,
+                                "line_linked": {
+                                    "opacity": 0.5
+                                }
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            }
+                        }
+                    },
+                    "retina_detect": true
+                });
+            }
+            
+            // Mobile menu toggle
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const nav = document.querySelector('nav');
+            
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    nav.classList.toggle('active');
+                });
+            }
+            
+            // Count up animation for about section
+            const countUpElements = document.querySelectorAll('.count-up');
+            
+            function animateCountUp(el) {
+                const target = parseInt(el.getAttribute('data-count'));
+                const duration = 2000;
+                const step = target / (duration / 30);
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        clearInterval(timer);
+                        el.textContent = target;
+                    } else {
+                        el.textContent = Math.floor(current);
+                    }
+                }, 30);
+            }
+            
+            // Use Intersection Observer for count-up animation
+            const countUpObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCountUp(entry.target);
+                        countUpObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            countUpElements.forEach(el => {
+                countUpObserver.observe(el);
+            });
+            
+            // Initialize stat animations
+            const statItems = document.querySelectorAll('.stat-item');
+            
+            const animateStats = () => {
+                statItems.forEach(item => {
+                    const valueDisplay = item.querySelector('.value');
+                    const targetValue = item.getAttribute('data-value');
+                    const progressCircle = item.querySelector('.progress');
+                    const circumference = 2 * Math.PI * 65;
+                    
+                    let currentValue = 0;
+                    const duration = 2000;
+                    const increment = targetValue / (duration / 20);
+                    
+                    progressCircle.style.strokeDasharray = circumference;
+                    progressCircle.style.strokeDashoffset = circumference;
+                    
+                    const timer = setInterval(() => {
+                        if (currentValue >= targetValue) {
+                            clearInterval(timer);
+                            currentValue = targetValue;
+                        }
+                        
+                        valueDisplay.textContent = Math.floor(currentValue);
+                        const progress = (targetValue - currentValue) / targetValue;
+                        progressCircle.style.strokeDashoffset = circumference * progress;
+                        
+                        currentValue += increment;
+                    }, 20);
+                });
+            };
+            
+            // Initialize tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const tabId = tab.getAttribute('data-tab');
+                    
+                    // Remove active class from all tabs and contents
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked tab and corresponding content
+                    tab.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Testimonial slideshow
+            const nextBtn = document.querySelector('.next-arrow');
+            const prevBtn = document.querySelector('.prev-arrow');
+            const slideTrack = document.querySelector('.slide-track');
+            const slides = document.querySelectorAll('.testimonial-card');
+            
+            let currentPosition = 0;
+            const slideWidth = slides[0].offsetWidth + 30; // card width + gap
+            const totalSlides = slides.length;
+            const slidesPerView = window.innerWidth < 768 ? 1 : window.innerWidth < 992 ? 2 : 3;
+            const maxPosition = (totalSlides - slidesPerView) * slideWidth;
+            
+            // Add active class to visible slides
+            function updateActiveSlides() {
+                const visibleStart = Math.floor(currentPosition / slideWidth);
+                slides.forEach((slide, index) => {
+                    if (index >= visibleStart && index < visibleStart + slidesPerView) {
+                        slide.classList.add('active');
+                    } else {
+                        slide.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Initial setup
+            updateActiveSlides();
+            
+            // Next slide
+            nextBtn.addEventListener('click', () => {
+                if (currentPosition < maxPosition) {
+                    currentPosition += slideWidth;
+                } else {
+                    currentPosition = 0; // Loop back to start
+                }
+                slideTrack.style.transform = `translateX(-${currentPosition}px)`;
+                updateActiveSlides();
+            });
+            
+            // Previous slide
+            prevBtn.addEventListener('click', () => {
+                if (currentPosition > 0) {
+                    currentPosition -= slideWidth;
+                } else {
+                    currentPosition = maxPosition; // Loop to end
+                }
+                slideTrack.style.transform = `translateX(-${currentPosition}px)`;
+                updateActiveSlides();
+            });
+            
+            // Auto-rotate testimonials
+            setInterval(() => {
+                if (currentPosition < maxPosition) {
+                    currentPosition += slideWidth;
+                } else {
+                    currentPosition = 0;
+                }
+                slideTrack.style.transform = `translateX(-${currentPosition}px)`;
+                updateActiveSlides();
+            }, 7000);
+            
+            // Handle window resize for responsive behavior
+            window.addEventListener('resize', () => {
+                const newSlidesPerView = window.innerWidth < 768 ? 1 : window.innerWidth < 992 ? 2 : 3;
+                if (newSlidesPerView !== slidesPerView) {
+                    currentPosition = 0;
+                    slideTrack.style.transform = 'translateX(0)';
+                    updateActiveSlides();
+                }
+            });
+            
+            // Intersection Observer for stats animation
+            const resultsSection = document.querySelector('.results');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateStats();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            if (resultsSection) {
+                observer.observe(resultsSection);
+            }
+            
+            // Parallax effect for about section background
+            window.addEventListener('scroll', function() {
+                const parallaxBg = document.querySelector('.parallax-bg');
+                if (parallaxBg) {
+                    const scrollPosition = window.pageYOffset;
+                    parallaxBg.style.transform = 'translateY(' + scrollPosition * 0.3 + 'px)';
+                }
+            });
+            
+            // Product filter functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            
+            // Initialize products with staggered animation
+            productCards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = "1";
+                    card.style.transform = "translateY(0)";
+                }, 100 * index);
+            });
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Add animation to button
+                    btn.classList.add('btn-clicked');
+                    setTimeout(() => {
+                        btn.classList.remove('btn-clicked');
+                    }, 300);
+                    
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    const filter = btn.getAttribute('data-filter');
+                    
+                    // Filter products with staggered animation
+                    let visibleIndex = 0;
+                    
+                    productCards.forEach(card => {
+                        card.style.transition = "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)";
+                        
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            // Show cards that match the filter
+                            setTimeout(() => {
+                                card.style.opacity = "1";
+                                card.style.transform = "translateY(0)";
+                                card.style.display = "block";
+                                card.classList.add('visible');
+                            }, 100 * visibleIndex);
+                            visibleIndex++;
+                        } else {
+                            // Hide cards that don't match
+                            card.classList.remove('visible');
+                            card.style.opacity = "0";
+                            card.style.transform = "translateY(20px) scale(0.95)";
+                            setTimeout(() => {
+                                card.style.display = "none";
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Video modal
+            const playButton = document.querySelector('.play-button');
+            if (playButton) {
+                playButton.addEventListener('click', () => {
+                    // In a real implementation, this would open a video modal
+                    alert('Video would play in a modal window');
+                });
+            }
+            
+            // Form animation enhancements
+            const formInputs = document.querySelectorAll('.floating-label input, .floating-label textarea, .floating-label select');
+            
+            formInputs.forEach(input => {
+                input.addEventListener('focus', () => {
+                    input.parentNode.classList.add('focused');
+                });
+                
+                input.addEventListener('blur', () => {
+                    if (!input.value) {
+                        input.parentNode.classList.remove('focused');
+                    }
+                });
+                
+                // Check if input has value on page load
+                if (input.value) {
+                    input.parentNode.classList.add('focused');
+                }
+            });
+            
+            // Reveal text animation on scroll
+            const revealTextElements = document.querySelectorAll('.reveal-text');
+            
+            const revealTextObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                    }
+                });
+            }, { threshold: 0.2 });
+            
+            revealTextElements.forEach(el => {
+                revealTextObserver.observe(el);
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    // Close mobile menu if open
+                    if(nav.classList.contains('active')) {
+                        mobileToggle.classList.remove('active');
+                        nav.classList.remove('active');
+                    }
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Initialize the before-after slider functionality
+            const beforeAfterSlider = document.querySelector('.before-after-slider');
+            if (beforeAfterSlider) {
+                const sliderHandle = beforeAfterSlider.querySelector('.slider-handle');
+                const beforeImg = beforeAfterSlider.querySelector('.before-img');
+                const afterImg = beforeAfterSlider.querySelector('.after-img');
+                const container = beforeAfterSlider.querySelector('.img-container');
+                
+                let isDragging = false;
+                
+                // Initial position (50%)
+                let sliderPosition = 50;
+                
+                // Function to update the slider position
+                const updateSliderPosition = (position) => {
+                    // Ensure position is between 0 and 100
+                    position = Math.max(0, Math.min(100, position));
+                    sliderPosition = position;
+                    
+                    // Update handle position
+                    sliderHandle.style.left = `${position}%`;
+                    
+                    // Update clip-path for the images
+                    beforeImg.style.clipPath = `polygon(0 0, ${position}% 0, ${position}% 100%, 0 100%)`;
+                    afterImg.style.clipPath = `polygon(${position}% 0, 100% 0, 100% 100%, ${position}% 100%)`;
+                };
+                
+                // Function to handle mouse/touch events
+                const handleDrag = (e) => {
+                    if (!isDragging) return;
+                    
+                    // Get relative mouse/touch position
+                    const rect = container.getBoundingClientRect();
+                    let clientX = e.clientX;
+                    
+                    // Support for mobile touch events
+                    if (e.type === 'touchmove') {
+                        clientX = e.touches[0].clientX;
+                    }
+                    
+                    // Calculate position in percentage
+                    const position = ((clientX - rect.left) / rect.width) * 100;
+                    updateSliderPosition(position);
+                    
+                    // Prevent default behavior to avoid text selection during drag
+                    e.preventDefault();
+                };
+                
+                // Add event listeners for mouse events
+                sliderHandle.addEventListener('mousedown', () => {
+                    isDragging = true;
+                });
+                
+                window.addEventListener('mouseup', () => {
+                    isDragging = false;
+                });
+                
+                window.addEventListener('mousemove', handleDrag);
+                
+                // Add event listeners for touch events (mobile support)
+                sliderHandle.addEventListener('touchstart', () => {
+                    isDragging = true;
+                });
+                
+                window.addEventListener('touchend', () => {
+                    isDragging = false;
+                });
+                
+                window.addEventListener('touchmove', handleDrag);
+                
+                // Handle click on the container itself for quick positioning
+                container.addEventListener('click', (e) => {
+                    const rect = container.getBoundingClientRect();
+                    const position = ((e.clientX - rect.left) / rect.width) * 100;
+                    updateSliderPosition(position);
+                });
+                
+                // Set initial position
+                updateSliderPosition(sliderPosition);
+            }
+        });
+    </script>
+</body>
+</html>
