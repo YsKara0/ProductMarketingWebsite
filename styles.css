@@ -23,8 +23,8 @@
 
 .lang-btn {
     background: transparent;
-    border: 1px solid #2a7d8c;
-    color: #2a7d8c;
+    border: 1px solid #6a3093;
+    color: #6a3093;
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -36,11 +36,11 @@
 }
 
 .lang-btn:hover {
-    background-color: rgba(42, 125, 140, 0.1);
+    background-color: rgba(106, 48, 147, 0.1);
 }
 
 .lang-btn.active {
-    background-color: #2a7d8c;
+    background-color: #6a3093;
     color: white;
 }
 
@@ -69,7 +69,7 @@
 .loader-logo {
     font-size: 32px;
     font-weight: 700;
-    color: #2a7d8c;
+    color: #6a3093;
     margin-bottom: 20px;
 }
 
@@ -85,7 +85,7 @@
     display: block;
     width: 0;
     height: 100%;
-    background-color: #2a7d8c;
+    background-color: #6a3093;
     animation: progress 1.5s ease forwards;
 }
 
@@ -117,7 +117,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #2a7d8c;
+    color: #6a3093;
 }
 
 section {
@@ -126,7 +126,7 @@ section {
 
 .btn {
     display: inline-block;
-    background-color: #2a7d8c;
+    background-color: #6a3093;
     color: white;
     padding: 12px 30px;
     border-radius: 30px;
@@ -137,7 +137,7 @@ section {
 }
 
 .btn:hover {
-    background-color: #1c6270;
+    background-color: #4e2268;
     transform: translateY(-2px);
 }
 
@@ -165,7 +165,7 @@ header .container {
 .logo {
     font-size: 24px;
     font-weight: 700;
-    color: #2a7d8c;
+    color: #6a3093;
 }
 
 .logo span {
@@ -189,7 +189,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #2a7d8c;
+    color: #6a3093;
 }
 
 /* Mobile toggle button */
@@ -207,7 +207,7 @@ nav ul li a:hover {
     display: block;
     height: 3px;
     width: 100%;
-    background-color: #2a7d8c;
+    background-color: #6a3093;
     border-radius: 3px;
     transition: all 0.3s ease;
 }
@@ -277,7 +277,7 @@ nav ul li a:hover {
     font-size: 54px;
     font-weight: 700;
     margin-bottom: 25px;
-    color: #2a7d8c;
+    color: #6a3093;
     line-height: 1.2;
     font-family: 'Playfair Display', serif;
 }
@@ -297,8 +297,8 @@ nav ul li a:hover {
 
 .btn-outline {
     display: inline-block;
-    border: 2px solid #2a7d8c;
-    color: #2a7d8c;
+    border: 2px solid #6a3093;
+    color: #6a3093;
     padding: 12px 30px;
     border-radius: 30px;
     text-transform: uppercase;
@@ -309,7 +309,7 @@ nav ul li a:hover {
 }
 
 .btn-outline:hover {
-    background-color: #2a7d8c;
+    background-color: #6a3093;
     color: white;
 }
 
@@ -325,7 +325,7 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     border-radius: 30px;
-    background: #2a7d8c;
+    background: #6a3093;
     z-index: -1;
     opacity: 0.3;
     transform: scale(1.1);
@@ -352,7 +352,7 @@ nav ul li a:hover {
 
 .badge i {
     font-size: 24px;
-    color: #2a7d8c;
+    color: #6a3093;
     margin-bottom: 10px;
 }
 
@@ -417,6 +417,9 @@ nav ul li a:hover {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 70%; /* Reduce the maximum width to 70% */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 .about-text {
@@ -486,7 +489,7 @@ nav ul li a:hover {
     position: absolute;
     top: 15px;
     right: 15px;
-    background-color: #2a7d8c;
+    background-color: #6a3093;
     color: white;
     font-size: 12px;
     font-weight: 600;
@@ -551,7 +554,7 @@ nav ul li a:hover {
 }
 
 .info-item i {
-    color: #2a7d8c;
+    color: #6a3093;
 }
 
 .product-card p {
@@ -640,7 +643,7 @@ nav ul li a:hover {
 
 .testimonial-quote {
     font-size: 24px;
-    color: #2a7d8c;
+    color: #6a3093;
     margin-bottom: 20px;
 }
 
@@ -690,7 +693,7 @@ nav ul li a:hover {
 }
 
 .prev-arrow, .next-arrow {
-    background: #2a7d8c;
+    background: #6a3093;
     color: white;
     border: none;
     width: 40px;
@@ -704,7 +707,7 @@ nav ul li a:hover {
 }
 
 .prev-arrow:hover, .next-arrow:hover {
-    background: #1c6270;
+    background: #4e2268;
 }
 
 @media (max-width: 991px) {
@@ -770,7 +773,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #2a7d8c;
+    background-color: #6a3093;
     color: white;
     padding: 60px 0 20px;
 }
@@ -832,7 +835,7 @@ footer {
 }
 
 .footer-newsletter button {
-    background-color: #1c6270;
+    background-color: #4e2268;
     color: white;
     border: none;
     padding: 0 15px;
@@ -842,7 +845,7 @@ footer {
 }
 
 .footer-newsletter button:hover {
-    background-color: #164d59;
+    background-color: #3d1b52;
 }
 
 .footer-bottom {
@@ -1079,8 +1082,8 @@ footer {
 
 .filter-btn {
     background-color: transparent;
-    border: 2px solid #2a7d8c;
-    color: #2a7d8c;
+    border: 2px solid #6a3093;
+    color: #6a3093;
     padding: 8px 20px;
     border-radius: 30px;
     cursor: pointer;
@@ -1097,7 +1100,7 @@ footer {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: rgba(42, 125, 140, 0.1);
+    background-color: rgba(106, 48, 147, 0.1);
     transition: width 0.3s ease;
     z-index: -1;
 }
@@ -1108,16 +1111,16 @@ footer {
 
 .filter-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(42, 125, 140, 0.2);
+    box-shadow: 0 4px 10px rgba(106, 48, 147, 0.2);
 }
 
 .filter-btn.active {
-    background-color: #2a7d8c;
+    background-color: #6a3093;
     color: white;
 }
 
 .filter-btn.active:hover {
-    background-color: #236873;
+    background-color: #582570;
 }
 
 .product-card.visible {
@@ -1172,7 +1175,7 @@ footer {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #2a7d8c;
+    color: #6a3093;
     margin-bottom: 10px;
 }
 
@@ -1187,7 +1190,7 @@ footer {
 .header-line {
     width: 60px;
     height: 3px;
-    background-color: #2a7d8c;
+    background-color: #6a3093;
     margin: 0 auto;
 }
 
@@ -1273,7 +1276,7 @@ footer {
 
 .before-after-slider .handle-circle i {
     font-size: 12px;
-    color: #2a7d8c;
+    color: #6a3093;
 }
 
 .before-after-slider .handle-circle i:first-child {
@@ -1297,7 +1300,7 @@ footer {
 
 .before-after-slider .label {
     padding: 5px 15px;
-    background-color: rgba(42, 125, 140, 0.8);
+    background-color: rgba(106, 48, 147, 0.8);
     color: white;
     border-radius: 20px;
     font-size: 14px;
@@ -1411,7 +1414,7 @@ footer {
 
 .progress-ring circle {
     fill: transparent;
-    stroke: #2a7d8c;
+    stroke: #6a3093;
     stroke-width: 6;
     stroke-linecap: round;
     stroke-dasharray: 408.4;
@@ -1427,7 +1430,7 @@ footer {
     z-index: 3;
     font-size: 24px;
     font-weight: 700;
-    color: #2a7d8c;
+    color: #6a3093;
     background-color: rgba(255, 255, 255, 0.7);
     width: 60px;
     height: 60px;
