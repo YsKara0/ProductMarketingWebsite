@@ -1408,17 +1408,19 @@ footer {
     max-width: 300px;
     border-radius: 8px;
     background-color: white;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
 }
 
 .science-tabs .tab:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-bottom: 3px solid #6a3093;
 }
 
 .science-tabs .tab.active {
-    border-bottom: 3px solid #6a3093;
+    background-color: #f9f5fc;
 }
 
 .science-tabs .tab h3 {

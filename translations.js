@@ -1,7 +1,7 @@
 const translations = {
     tr: {
         // Header & Navigation
-        "title": "DermaMoist - Lüks Dermatolojik Cilt Bakımı",
+        "title": "Reviel - Lüks Dermatolojik Cilt Bakımı",
         "nav-home": "Ana Sayfa",
         "nav-about": "Hakkımızda",
         "nav-products": "Ürünler",
@@ -20,8 +20,8 @@ const translations = {
         
         // About Section
         "about-subtitle": "Hikayemiz",
-        "about-title": "DermaMoist Hakkında",
-        "about-lead": "DermaMoist, dünya çapında önde gelen dermatologlar tarafından güvenilen dermatolojik cilt bakımının zirvesini temsil eder.",
+        "about-title": "Reviel Hakkında",
+        "about-lead": "Reviel, dünya çapında önde gelen dermatologlar tarafından güvenilen dermatolojik cilt bakımının zirvesini temsil eder.",
         "about-p1": "Önde gelen dermatoloji araştırmacıları ve biyokimyacılar arasındaki işbirliğinden doğan formülasyonlarımız, cilt bilimindeki en son gelişmelerden yararlanır. Eşsiz kalite ve etkililik sağlamak için sadece titizlikle kaynaklanmış ve test edilmiş farmasötik sınıf içerikler kullanıyoruz.",
         "about-p2": "Geleneksel nemlendiricilerin aksine, özel Aqua-Lock Teknolojimiz™, gün boyunca cildinizin değişen ihtiyaçlarına uyum sağlayan, hassas ayarlı nemlendirme sağlayan duyarlı bir nem matrisi oluşturur.",
         "about-years": "Mükemmellik<br>Yılı",
@@ -29,7 +29,7 @@ const translations = {
 
         // Science Section
         "science-subtitle": "Yaklaşımımız",
-        "science-title": "DermaMoist'in Arkasındaki Bilim",
+        "science-title": "Reviel'in Arkasındaki Bilim",
         "science-tab-1": "Araştırma",
         "science-tab-2": "Teknoloji",
         "science-tab-3": "Test",
@@ -72,7 +72,7 @@ const translations = {
         
         // Benefits Section
         "benefits-subtitle": "Neden Bizi Seçmelisiniz",
-        "benefits-title": "DermaMoist Farkı",
+        "benefits-title": "Reviel Farkı",
         "benefit-1-title": "Klinik Düzeyde Nemlendirme",
         "benefit-1-desc": "Gelişmiş formülasyonlar, hücresel düzeyde 72 saate kadar sürekli nemlendirme sağlar",
         "benefit-2-title": "Bariyer Restorasyonu",
@@ -134,11 +134,11 @@ const translations = {
         "footer-newsletter": "Topluluğumuza Katılın",
         "footer-newsletter-p": "Dermatologlarımızdan özel içerikler, cilt bakım ipuçları ve ürün lansmanları için abone olun.",
         "footer-email-placeholder": "E-posta adresiniz",
-        "footer-copyright": "© 2023 DermaMoist. Tüm hakları saklıdır. DermaMoist™ ve Aqua-Lock Technology™ tescilli ticari markalardır."
+        "footer-copyright": "© 2023 Reviel. Tüm hakları saklıdır. Reviel™ ve Aqua-Lock Technology™ tescilli ticari markalardır."
     },
     en: {
         // Header & Navigation
-        "title": "DermaMoist - Luxury Dermatologic Skincare",
+        "title": "Reviel - Luxury Dermatologic Skincare",
         "nav-home": "Home",
         "nav-about": "About",
         "nav-products": "Products",
@@ -157,8 +157,8 @@ const translations = {
         
         // About Section
         "about-subtitle": "Our Story",
-        "about-title": "About DermaMoist",
-        "about-lead": "DermaMoist represents the pinnacle of dermatologic skincare, trusted by leading dermatologists worldwide.",
+        "about-title": "About Reviel",
+        "about-lead": "Reviel represents the pinnacle of dermatologic skincare, trusted by leading dermatologists worldwide.",
         "about-p1": "Born from a collaboration between leading dermatology researchers and biochemists, our formulations harness the latest advances in skin science. We utilize only pharmaceutical-grade ingredients, meticulously sourced and tested to ensure unparalleled quality and efficacy.",
         "about-p2": "Unlike conventional moisturizers, our proprietary Aqua-Lock Technology™ creates a responsive moisture matrix that adapts to your skin's changing needs throughout the day, providing precisely calibrated hydration.",
         "about-years": "Years of<br>Excellence",
@@ -166,7 +166,7 @@ const translations = {
 
         // Science Section
         "science-subtitle": "Our Approach",
-        "science-title": "The Science Behind DermaMoist",
+        "science-title": "The Science Behind Reviel",
         "science-tab-1": "Research",
         "science-tab-2": "Technology",
         "science-tab-3": "Testing",
@@ -209,7 +209,7 @@ const translations = {
         
         // Benefits Section
         "benefits-subtitle": "Why Choose Us",
-        "benefits-title": "The DermaMoist Difference",
+        "benefits-title": "The Reviel Difference",
         "benefit-1-title": "Clinical-Grade Hydration",
         "benefit-1-desc": "Advanced formulations deliver up to 72 hours of continuous hydration at the cellular level",
         "benefit-2-title": "Barrier Restoration",
@@ -271,6 +271,6 @@ const translations = {
         "footer-newsletter": "Join Our Community",
         "footer-newsletter-p": "Subscribe for exclusive content, skincare tips from our dermatologists, and product launches.",
         "footer-email-placeholder": "Your email address",
-        "footer-copyright": "© 2023 DermaMoist. All rights reserved. DermaMoist™ and Aqua-Lock Technology™ are registered trademarks."
+        "footer-copyright": "© 2023 Reviel. All rights reserved. Reviel™ and Aqua-Lock Technology™ are registered trademarks."
     }
 }; 
