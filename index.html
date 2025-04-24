@@ -7,8 +7,8 @@
 
 
 
-    
-    
+
+
     <!-- SEO Meta Tags -->
 
 
@@ -43,8 +43,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="translations.js"></script>
-    
-
 
 
 
@@ -150,7 +148,6 @@
       }
     }
     </script>
-
 
 
 
@@ -586,35 +583,40 @@
             </div>
             <div class="contact-content">
                 <div class="contact-form" data-aos="fade-right" data-aos-delay="200">
-                    <form id="contactForm">
-                        <div class="form-group floating-label">
-                            <input type="text" id="name" name="name" required placeholder=" ">
-                            <label for="name" data-key="form-name">Ad Soyad</label>
-                            <div class="line-animation"></div>
-                        </div>
-                        <div class="form-group floating-label">
-                            <input type="email" id="email" name="email" required placeholder=" ">
-                            <label for="email" data-key="form-email">E-posta Adresi</label>
-                            <div class="line-animation"></div>
-                        </div>
-                        <div class="form-group floating-label">
-                            <select id="inquiry" name="inquiry" required>
-                                <option value="" disabled selected></option>
-                                <option value="product" data-key="inquiry-product">Ürün Sorgulaması</option>
-                                <option value="professional" data-key="inquiry-professional">Profesyonel İşbirliği</option>
-                                <option value="press" data-key="inquiry-press">Basın & Medya</option>
-                                <option value="other" data-key="inquiry-other">Diğer</option>
-                            </select>
-                            <label for="inquiry" data-key="form-inquiry">Sorgulama Türü</label>
-                            <div class="line-animation"></div>
-                        </div>
-                        <div class="form-group floating-label">
-                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
-                            <label for="message" data-key="form-message">Mesajınız</label>
-                            <div class="line-animation"></div>
-                        </div>
-                        <button type="submit" class="btn" data-key="form-submit">Mesaj Gönder</button>
-                    </form>
+                    <form id="contactForm" action="https://formsubmit.co/karaayavuzselim@gmail.com" method="POST">
+                    <!-- Replace with your actual email -->
+                    <input type="hidden" name="_next" value="/thank-you.html">
+                    <input type="hidden" name="_subject" value="New Reviel Contact Form Submission">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-group floating-label">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name" data-key="form-name">Ad Soyad</label>
+                        <div class="line-animation"></div>
+                    </div>
+                    <div class="form-group floating-label">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email" data-key="form-email">E-posta Adresi</label>
+                        <div class="line-animation"></div>
+                    </div>
+                    <div class="form-group floating-label">
+                        <select id="inquiry" name="inquiry" required>
+                            <option value="" disabled selected></option>
+                            <option value="product" data-key="inquiry-product">Ürün Sorgulaması</option>
+                            <option value="professional" data-key="inquiry-professional">Profesyonel İşbirliği</option>
+                            <option value="press" data-key="inquiry-press">Basın & Medya</option>
+                            <option value="other" data-key="inquiry-other">Diğer</option>
+                        </select>
+                        <label for="inquiry" data-key="form-inquiry">Sorgulama Türü</label>
+                        <div class="line-animation"></div>
+                    </div>
+                    <div class="form-group floating-label">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message" data-key="form-message">Mesajınız</label>
+                        <div class="line-animation"></div>
+                    </div>
+                    <button type="submit" class="btn" data-key="form-submit">Mesaj Gönder</button>
+                </form>
                 </div>
                 <div class="contact-info" data-aos="fade-left" data-aos-delay="400">
                     <h3 data-key="contact-heading">Bağlantı Kuralım</h3>
@@ -705,12 +707,18 @@
                     <div class="footer-newsletter">
                         <h4 data-key="footer-newsletter">Topluluğumuza Katılın</h4>
                         <p data-key="footer-newsletter-p">Dermatologlarımızdan özel içerikler, cilt bakım ipuçları ve ürün lansanları için abone olun.</p>
-                        <form class="newsletter-form">
-                            <div class="form-group">
-                                <input type="email" placeholder="E-posta adresiniz" data-key="footer-email-placeholder">
-                                <button type="submit"><i class="fas fa-arrow-right"></i></button>
-                            </div>
-                        </form>
+                        <form class="newsletter-form" action="https://formsubmit.co/karaayavuzselim@gmail.com" method="POST">
+    <!-- Replace with your actual email -->
+    <input type="hidden" name="_next" value="/thank-you.html">
+    <input type="hidden" name="_subject" value="New Newsletter Subscription">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="form-type" value="newsletter">
+    
+    <div class="form-group">
+        <input type="email" name="email" placeholder="E-posta adresiniz" data-key="footer-email-placeholder" required>
+        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+    </div>
+</form>
                     </div>
                 </div>
             </div>

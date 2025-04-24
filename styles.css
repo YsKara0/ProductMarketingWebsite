@@ -1813,3 +1813,31 @@ nav ul li a.active:after {
         height: 60px;
     }
 }
+
+/* Thank You Page Styles */
+.thank-you-section {
+    padding: 160px 0 100px;
+    text-align: center;
+}
+
+.thank-you-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.thank-you-content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #6a3093;
+}
+
+.thank-you-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.thank-you-content .btn {
+    display: inline-block;
+    margin-top: 20px;
+}
